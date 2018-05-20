@@ -1,6 +1,0 @@
-<!--index.wxml-->
-
-
-<!--#D2D2D2下一步--> 
-
-<button class='setBtn' style='background-color: #3185FF;'>去设置Wi-Fi</button>
