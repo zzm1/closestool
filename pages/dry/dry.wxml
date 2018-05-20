@@ -1,0 +1,30 @@
+<import src="../template/mySlider.wxml" />
+<view class="detail">
+    <view class='detail-top'>
+        <view class='detail-tip'>
+            <image src="/image/detail-bg.png" class='bg-img'></image>
+            <view class='current-name'>烘干</view>
+            <image src='/image/work/hg.png' class='current-img'></image>
+            <view class='work-name'>烘干中</view>
+        </view>
+        <view class='top-temp'>
+            <view class='temp-item'>
+                <text>20</text>
+                <view>入水温度℃</view>
+            </view>
+            <view class='temp-item'>
+                <text>25</text>
+                <view>出水温度℃</view>
+            </view>
+        </view>
+    </view>
+    <view class='setList stop'>
+        停止
+        <image src="{{sourceData.Mode==0?'/image/stop-active.png':'/image/stop.png'}}" hover-class="hover-style" catchtap='handleStop'></image>
+    </view>
+    <block wx:for="{{setList}}" wx:key="{{item}}">
+        <view class='slider-item'>
+            <template is="mySlider" data="{{...item,index}}" />
+        </view>
+    </block>
+</view>

@@ -1,0 +1,15 @@
+<!--pages/start/start.wxml-->
+<view class='start'>
+    <view class='title'>设备列表
+        <button type="primary" size='mini' catchtap='scaleAgain'> 重新获取设备 </button>
+    </view>
+    <scroll-view class="scroll-view_H" scroll-y style="width: 100%">
+        <view class='item-box' hover-class="hover-style" wx:for="{{deviceList}}" wx:key="{{index}}" catchtap='chooseDevice' data-device-id="{{item.deviceId}}" data-mac="{{item.mac}}">
+            <text>{{item.productName}}</text>
+            <view>{{item.mac}}</view>
+        </view>
+        <view class='item-box' style="display:{{deviceList.length==0?'block':'none'}} ;color:red">
+            <text>暂无发现设备</text>
+        </view>
+    </scroll-view>
+</view>

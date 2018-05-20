@@ -1,0 +1,17 @@
+.selectSet{
+    margin-top: 18rpx;
+    border-top: 1px solid #ddd;
+}
+.setList{
+    line-height: 88rpx;
+    background: #fff;
+    font-size: 34rpx;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    padding-left: 32rpx;
+}
+.navigator-hover{
+    background: #dcdcdc;
+    /* background: #fff; */
+    /* opacity: .65; */
+}

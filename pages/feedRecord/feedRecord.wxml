@@ -1,0 +1,33 @@
+<view>
+    <navigator class='item-box' hover-class='hover-style' url='/pages/feedDetail/feedDetail'>
+        <view class='item-wrap'>
+            <view class='title'>
+                <text class='name'>故障描述:</text>
+                <text class='detail'>223434223434223434223434223434223434</text>
+            </view>
+            <text class='date'>2018/5/17 15:26</text>
+        </view>
+        <image src='/image/arrow-right.png'></image>
+    </navigator>
+    <navigator class='item-box' hover-class='hover-style' url='/pages/feedDetail/feedDetail'>
+        <view class='item-wrap'>
+            <view class='title'>
+                <text class='name'>故障描述:</text>
+                <text class='detail'>223434223434223434223434223434223434</text>
+            </view>
+            <text class='date'>2018/5/17 15:26</text>
+        </view>
+        <image src='/image/arrow-right.png'></image>
+    </navigator>
+    <navigator class='item-box' hover-class='hover-style' url='/pages/feedDetail/feedDetail'>
+        <view class='item-wrap'>
+            <view class='title'>
+                <text class='name'>故障描述:</text>
+                <text class='detail'>223434223434223434223434223434223434</text>
+            </view>
+            <text class='date'>2018/5/17 15:26</text>
+        </view>
+        <image src='/image/arrow-right.png'></image>
+    </navigator>
+
+</view>

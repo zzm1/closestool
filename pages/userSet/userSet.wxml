@@ -1,0 +1,8 @@
+<import src="../template/mySlider.wxml" />
+<view class='userSet' bindtouchstart='preventDef' bindtouchmove='preventDef'>
+    <block wx:for="{{setList}}" wx:key="{{item}}">
+        <view style='margin-bottom:20rpx'>
+            <template is="mySlider" data="{{...item,index}}" />
+        </view>
+    </block>
+</view>

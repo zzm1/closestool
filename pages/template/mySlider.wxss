@@ -1,0 +1,39 @@
+.slider-num {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider-num text {
+    margin-left: 0;
+    font-size: 24rpx;
+    margin-top: 8rpx;
+    color: #999;
+}
+
+.slider-num text:first-child {
+    position: relative;
+    right: -.5em;
+}
+
+.slider-num text:last-child {
+    position: relative;
+    right: 0.5em;
+}
+
+.slider-num text.active {
+    font-size: 34rpx;
+    color: #36a6f2;
+}
+
+.temp-list {
+    padding: 0 32rpx 38rpx;
+    background: #fff;
+}
+
+.temp-list .temp-name {
+    font-size: 32rpx;
+    color: #333;
+    line-height: 88rpx;
+}

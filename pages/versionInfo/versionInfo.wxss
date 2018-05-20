@@ -1,0 +1,45 @@
+.versionInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-box {
+    background: #fff;
+    padding: 16rpx 34rpx 12rpx;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20rpx;
+}
+
+.item-box:first-child {
+    border-top: 0;
+}
+
+.item-box .name {
+    font-size: 34rpx;
+    line-height: 48rpx;
+    margin-bottom: 4rpx;
+    color: #333;
+}
+
+.item-box text {
+    font-size: 28rpx;
+    line-height: 40rpx;
+    color: #888;
+}
+
+.mac-box {
+    display: flex;
+    width: 100%;
+    background: #fff;
+    height: 120rpx;
+    line-height: 120rpx;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    padding-left: 32rpx;
+    font-size: 34rpx;
+    color: #333;
+}
+.mac-box .name{
+    margin-right: .5em;
+}

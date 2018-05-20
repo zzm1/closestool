@@ -1,0 +1,49 @@
+{
+    "pages": [
+        "HetDeviceSDK/pages/BindDevice/HotDevices/index",
+        "HetDeviceSDK/pages/BindDevice/DeviceCategories/index",
+        "pages/index/index",
+        "pages/logs/logs",
+        "pages/setting/setting",
+        "pages/selectSet/selectSet",
+        "pages/userSet/userSet",
+        "pages/ablity1/ablity1",
+        "pages/ablity2/ablity2",
+        "pages/start/start",
+        "pages/dry/dry",
+        "pages/detail/detail",
+        "pages/versionInfo/versionInfo",
+        "pages/feedBack/feedBack",
+        "pages/feedInfo/feedInfo",
+        "pages/feedRecord/feedRecord",
+        "pages/feedDetail/feedDetail",
+        "pages/comProblem/comProblem"
+    ],
+    "window": {
+        "navigationBarBackgroundColor":"#289CFF",
+        "navigationBarTitleText": "智能马桶",
+        "navigationBarTextStyle": "#fff",
+        "enablePullDownRefresh":false,
+        "backgroundColor": "#f7f7f7"
+    },
+    "tabBar": {
+        "color": "#888",
+        "selectedColor": "#36a6f2",
+        "borderStyle": "#e5e5e5",
+        "backgroundColor": "#fff",
+        "list": [
+            {
+                "text": "功能1",
+                "pagePath": "pages/ablity1/ablity1"
+            },
+            {
+                "text": "功能2",
+                "pagePath": "pages/ablity2/ablity2"
+            },
+            {
+                "text": "设置",
+                "pagePath": "pages/setting/setting"
+            }
+        ]
+    }
+}

@@ -1,0 +1,48 @@
+/* pages/feedRecord/feedRecord.wxss */
+
+.item-box {
+    display: flex;
+    background: #fff;
+    padding: 0 32rpx;
+    height: 120rpx;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20rpx;
+}
+.item-wrap{
+    flex: 1;
+    padding-right: .5em;
+    overflow: hidden;
+}
+
+.item-box:first-child {
+    border-top: 0;
+}
+
+.item-box image {
+    width: 16rpx;
+    height: 26rpx;
+}
+
+.date {
+    line-height: 40rpx;
+    font-size: 28rpx;
+    color: #888;
+}
+
+.title {
+    font-size: 34rpx;
+    color: #333;
+    line-height: 48rpx;
+    margin-bottom: 4rpx;
+    display: flex;
+}
+.title .name{
+    width: 4.5em;
+}
+.title .detail{
+    flex: 1;
+    overflow: hidden; text-overflow:ellipsis; white-space: nowrap;
+}

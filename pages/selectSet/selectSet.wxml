@@ -1,0 +1,5 @@
+<view class='selectSet' bindtap='goUserSet'>
+    <navigator url="/pages/userSet/userSet?userType=3" class='setList' hover-class="navigator-hover">当前用户</navigator>
+    <navigator url="/pages/userSet/userSet?userType=1" class='setList' hover-class="navigator-hover">用户1</navigator>
+    <navigator url="/pages/userSet/userSet?userType=2" class='setList' hover-class="navigator-hover">用户2</navigator>
+</view>

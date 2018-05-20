@@ -1,0 +1,34 @@
+<import src="../template/mySlider.wxml" />
+<view class="detail">
+    <view class='detail-top'>
+        <view class='detail-tip'>
+            <image src="/image/detail-bg.png" class='bg-img'></image>
+            <view class='current-name'>{{modeData[mode].name}}</view>
+            <image src="{{modeData[mode].image}}" class='current-img'></image>
+            <view class='work-name'>{{modeData[mode].name}}中</view>
+        </view>
+        <view class='top-temp'>
+            <view class='temp-item'>
+                <text>20</text>
+                <view>入水温度℃</view>
+            </view>
+            <view class='temp-item'>
+                <text>25</text>
+                <view>出水温度℃</view>
+            </view>
+        </view>
+    </view>
+    <view class='setList stop'>
+        停止
+        <image src="{{stop?'/image/stop.png':'/image/stop-active.png'}}" hover-class="hover-style" catchtap='handleStop'></image>
+    </view>
+    <view class='setList repeat'>
+        往复
+        <switch bindchange="switchRepeat" color='#35a6f4' />
+    </view>
+    <block wx:for="{{setList}}" wx:key="{{item}}" style="display:{{mode==7?'none':'block'}}">
+        <view class='slider-item'>
+            <template is="mySlider" data="{{...item,index}}" />
+        </view>
+    </block>
+</view>

@@ -1,0 +1,70 @@
+<view class='ablity1'>
+    <view class='title'>
+        <text>用户选择</text>
+    </view>
+    <view class='tab-box'>
+        <view class="{{sourceData.UseSelect==3?'active':''}}" hover-class="hover-style" catchtap='changeUser' data-user="3">当前用户</view>
+        <view class="{{sourceData.UseSelect==1?'active':''}}" hover-class="hover-style" catchtap='changeUser' data-user="1">用户1</view>
+        <view class="{{sourceData.UseSelect==2?'active':''}}" hover-class="hover-style" catchtap='changeUser' data-user="2">用户2</view>
+    </view>
+    <view class='title borderTop1'>
+        <text>模式设置</text>
+    </view>
+    <view class='ab-list'>
+        <!-- 0-未使用|1-一键全自动|2-烘干|3-冲水|4-臀部清洗|5-女性清洗|6-润肠水疗|7-儿童清洗|8-冷热SPA|9-经期护理|10-碰头清洗 -->
+        <view class='item-box' hover-class="hover-style" catchtap='handleDetail' data-type="qingximoshizhuangtai" data-mode="1">
+            <image src="{{sourceData.qingximoshizhuangtai==1?'/image/zd-active.png':'/image/zd.png'}}" class='ab-img'></image>
+            <view>
+                一键自动
+            </view>
+        </view>
+        <view class='item-box' hover-class="hover-style" catchtap='handleDetail' data-type="qingximoshizhuangtai" data-mode="4">
+            <image src="{{sourceData.qingximoshizhuangtai==4?'/image/tb-active.png':'/image/tb.png'}}" class='ab-img'></image>
+            <view>
+                臀部清洗
+            </view>
+        </view>
+        <view class='item-box' hover-class="hover-style" catchtap='handleDetail' data-type="qingximoshizhuangtai" data-mode="5">
+            <image src="{{sourceData.qingximoshizhuangtai==5?'/image/nx-active.png':'/image/nx.png'}}" class='ab-img'></image>
+            <view>
+                女性清洗
+            </view>
+        </view>
+        <view class='item-box' hover-class="hover-style" catchtap='openDry' data-type="qingximoshizhuangtai" data-mode="2">
+            <image src="{{sourceData.qingximoshizhuangtai==2?'/image/hg-active.png':'/image/hg.png'}}" class='ab-img'></image>
+            <view>
+                烘干
+            </view>
+        </view>
+        <view class='item-box' hover-class="hover-style" catchtap='handleStop'>
+            <image src="{{sourceData.Mode==0?'/image/stop-active.png':'/image/stop.png'}}" class='ab-img'></image>
+            <view class="{{sourceData.Mode==0?'active':''}} 'stop'">
+                停止
+            </view>
+        </view>
+        <view class='item-box' hover-class="hover-style" catchtap='handleDetail' data-type="qingximoshizhuangtai" data-mode="3">
+            <image src="{{sourceData.qingximoshizhuangtai==2?'/image/cs-active.png':'/image/cs.png'}}" class='ab-img'></image>
+            <view>
+                冲水
+            </view>
+        </view>
+        <view class='item-box' class='item-box' hover-class="hover-style" catchtap='handelGai' data-zuogaizhuangtai="1" data-zuoquanzhuangtai="1">
+            <image src="{{sourceData.zuogaizhuangtai==1&&sourceData.zuoquanzhuangtai==1?'/image/kk-active.png':'/image/kk.png'}}" class='ab-img'></image>
+            <view>
+                翻圈翻盖
+            </view>
+        </view>
+        <view class='item-box' class='item-box' hover-class="hover-style" catchtap='handelGai' data-zuogaizhuangtai="1" data-zuoquanzhuangtai="2" >
+            <image src="{{sourceData.zuogaizhuangtai==1&&sourceData.zuoquanzhuangtai==2?'/image/kh-active.png':'/image/kh.png'}}" class='ab-img'></image>
+            <view>
+                翻盖合圈
+            </view>
+        </view>
+        <view class='item-box' class='item-box' hover-class="hover-style" catchtap='handelGai'data-zuogaizhuangtai="2" data-zuoquanzhuangtai="2">
+            <image src="{{sourceData.zuogaizhuangtai==2&&sourceData.zuoquanzhuangtai==2?'/image/hh-active.png':'/image/hh.png'}}" class='ab-img'></image>
+            <view>
+                合盖合圈
+            </view>
+        </view>
+    </view>
+</view>

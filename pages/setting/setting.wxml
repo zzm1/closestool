@@ -1,0 +1,42 @@
+<import src="../template/mySlider.wxml" />
+<view class='setting'>
+    <view class='setList1 list-com' hover-class="hover-style" bindtap='goToSelSet'>用户自定义设置</view>
+    <!-- <navigator url="/pages/selectSet/selectSet" hover-class="navigator-hover">用户自定义设置</navigator> -->
+    <view class=' setList2 list-com '>
+        自动翻盖
+        <switch bindchange="handleAutoFg" checked="{{sourceData.AutoOpenONOff==1?true:false}}" color='#35a6f4' type="switch" />
+    </view>
+    <view class='setList2 list-com '>
+        设备
+        <switch type="switch" color='#35a6f4' checked="{{sourceData.DeviceOnOff==1?true:false}}" bindchange="handlePower" />
+    </view>
+    <view class='setList4 '>
+        <template is="mySlider" data="{{title:'座温 ',value:sourceData.SetSeatTemp,index:0}}" />
+    </view>
+    <view class='setList5 list-com ' style='display:none'>
+        <navigator class='setList5-item ' hover-class="hover-style" url='/pages/versionInfo/versionInfo'>
+            <view>
+                版本信息
+                <image src="/image/arrow-right.png"></image>
+            </view>
+        </navigator>
+        <navigator class='setList5-item ' hover-class="hover-style" url='/pages/feedRecord/feedRecord'>
+            <view>
+                故障信息
+                <image src="/image/arrow-right.png"></image>
+            </view>
+        </navigator>
+        <navigator class='setList5-item ' hover-class="hover-style" url='/pages/feedBack/feedBack'>
+            <view>
+                故障反馈
+                <image src="/image/arrow-right.png"></image>
+            </view>
+        </navigator>
+        <navigator class='setList5-item ' hover-class="hover-style" url='/pages/comProblem/comProblem'>
+            <view>
+                常见问题
+                <image src="/image/arrow-right.png"></image>
+            </view>
+        </navigator>
+    </view>
+</view>

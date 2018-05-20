@@ -1,0 +1,24 @@
+/* pages/comProblem/comProblem.wxss */
+.item-box{
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20rpx;
+    margin: 0 40rpx 20rpx;
+    padding: 32rpx;
+}
+.item-box:first-child{
+    margin-top: 40rpx;
+}
+.item-box .title{
+    font-size: 34rpx;
+    color: #333;
+    margin-bottom: 16rpx;
+    line-height: 48rpx;
+
+}
+.item-box .detail{
+    font-size: 34rpx;
+    color: #888;
+    text-align: justify;
+}

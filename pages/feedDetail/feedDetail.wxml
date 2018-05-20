@@ -1,0 +1,39 @@
+<view class='feedBack'>
+    <view class='item-box'>
+        <view class='item-wrap'>
+            <view class='title'>手机号</view>
+            <input type='number' maxlength='11' value='15915714215' focus disabled />
+        </view>
+        <view class='item-wrap camera-item'>
+            <view class='title'>序列号</view>
+            <input type='number' maxlength='50' value="{{code}}" bindinput="changeCode" value='1212131321231' disabled />
+        </view>
+    </view>
+    <view class='quesion-box'>
+        <view class='item-wrap'>
+            <view class='title'>问题分类</view>
+            <picker bindchange="changeQuestOne" range="{{questionListOne}}" disabled>
+                <view class="picker">
+                    {{questionOne}}
+                    <image src='/image/arrow-down.png' class='arrow-down'></image>
+                </view>
+            </picker>
+            <picker bindchange="changeQuestTwo"  disabled="{{questionListTwo.length==0}}" range="{{questionListTwo}}" disabled>
+                <view class="picker">
+                    {{questionTwo}}
+                    <image src='/image/arrow-down.png' class='arrow-down'></image>                    
+                </view>
+            </picker>
+        </view>
+    </view>
+    <view class='feed-box'>
+        <text>问题反馈 (如设备异常,请填写异常情况)</text>
+        <view>
+            <textarea maxlength='200' value="{{code}}" value='zzzmzmzzmzmzmmz' disabled></textarea>
+        </view>
+    </view>
+    <view class='tel-box' hover-class="hover-style" bindtap='makeTel' data-tel="12306">
+        <text class='title'>客服电话</text>
+        <text>123456</text>
+    </view>
+</view>

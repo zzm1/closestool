@@ -1,0 +1,156 @@
+<!-- <view class='ablity1'>
+    <view class='title'>
+        <text>用户选择</text>
+    </view>
+    <view class='tab-box'>
+        <text class="{{sourceData.UseSelect==3?'active':''}}" hover-class="hover-style" catchtap='changeUser' data-user="3">当前用户</text>
+        <text class="{{sourceData.UseSelect==1?'active':''}}" hover-class="hover-style" catchtap='changeUser' data-user="1">用户1</text>
+        <text class="{{sourceData.UseSelect==2?'active':''}}" hover-class="hover-style" catchtap='changeUser' data-user="2">用户2</text>
+    </view>
+    <view class='title borderTop1'>
+        <text>模式设置</text>
+    </view>
+    <view class='ab-list'>
+    //0-未使用|1-一键全自动|2-烘干|3-冲水|4-臀部清洗|5-女性清洗|6-润肠水疗|7-儿童清洗|8-冷热SPA|9-经期护理|10-碰头清洗
+        <view class='item-box' hover-class="hover-style" catchtap='handleDetail' data-type="qingximoshizhuangtai" data-mode="1">
+            <image src="{{sourceData.qingximoshizhuangtai==7?'/image/child-active.png':'/image/child.png'}}" class='ab-img'></image>
+            <view>
+                儿童清洗
+            </view>
+        </view>
+        <view class='item-box'>
+            <view class='ab-img'>
+                <image src='/image/jq.png'></image>
+            </view>
+            <view>
+                经期特护
+            </view>
+        </view>
+        <view class='item-box'>
+            <view class='ab-img'>
+                <image src='/image/lr.png'></image>
+            </view>
+            <view>
+                冷热spa
+            </view>
+        </view>
+        <view class='item-box'>
+            <view class='ab-img'>
+                <image src='/image/rc.png'></image>
+            </view>
+            <view>
+                润肠水疗
+            </view>
+        </view>
+        <view class='item-box'>
+            <view class='ab-img'>
+                <image src='/image/pt.png'></image>
+            </view>
+            <view>
+                喷头清洁
+            </view>
+        </view>
+        <view class='item-box'>
+            <view class='ab-img'>
+                <image src='/image/rg.png'></image>
+            </view>
+            <view>
+                柔光照明 (开)
+            </view>
+        </view>
+        <view class='item-box'>
+            <view class='ab-img'>
+                <image src='/image/jn.png'></image>
+            </view>
+            <view>
+                节能 (开)
+            </view>
+        </view>
+        <view class='item-box'>
+            <view class='ab-img'>
+                <image src='/image/cc.png'></image>
+            </view>
+            <view>
+                自动除臭 (开)
+            </view>
+        </view>
+        <view class='item-box'>
+            <view class='ab-img'>
+                <image src='/image/zw.png'></image>
+            </view>
+            <view>
+                座温 (开)
+            </view>
+        </view>
+    </view>
+</view> -->
+<view class='ablity1'>
+    <view class='title'>
+        <text>用户选择</text>
+    </view>
+    <view class='tab-box'>
+        <view class="{{sourceData.UseSelect==3?'active':''}}" hover-class="hover-style" catchtap='changeUser' data-user="3">当前用户</view>
+        <view class="{{sourceData.UseSelect==1?'active':''}}" hover-class="hover-style" catchtap='changeUser' data-user="1">用户1</view>
+        <view class="{{sourceData.UseSelect==2?'active':''}}" hover-class="hover-style" catchtap='changeUser' data-user="2">用户2</view>
+    </view>
+    <view class='title borderTop1'>
+        <text>模式设置</text>
+    </view>
+    <view class='ab-list'>
+        <!-- 0-未使用|1-一键全自动|2-烘干|3-冲水|4-臀部清洗|5-女性清洗|6-润肠水疗|7-儿童清洗|8-冷热SPA|9-经期护理|10-碰头清洗 -->
+        <view class='item-box' hover-class="hover-style" catchtap='handleDetail' data-type="qingximoshizhuangtai" data-mode="7">
+            <image src="{{sourceData.qingximoshizhuangtai==7?'/image/child-active.png':'/image/child.png'}}" class='ab-img'></image>
+            <view>
+                儿童清洗
+            </view>
+        </view>
+        <view class='item-box' hover-class="hover-style" catchtap='handleDetail' data-type="qingximoshizhuangtai" data-mode="9">
+            <image src="{{sourceData.qingximoshizhuangtai==9?'/image/jq-active.png':'/image/jq.png'}}" class='ab-img'></image>
+            <view>
+                经期特护
+            </view>
+        </view>
+        <view class='item-box' hover-class="hover-style" catchtap='handleDetail' data-type="qingximoshizhuangtai" data-mode="8">
+            <image src="{{sourceData.qingximoshizhuangtai==8?'/image/lr-active.png':'/image/lr.png'}}" class='ab-img'></image>
+            <view>
+                冷热spa
+            </view>
+        </view>
+        <view class='item-box' hover-class="hover-style" catchtap='openDry' data-type="qingximoshizhuangtai" data-mode="6">
+            <image src="{{sourceData.qingximoshizhuangtai==6?'/image/rc-active.png':'/image/rc.png'}}" class='ab-img'></image>
+            <view>
+                润肠水疗
+            </view>
+        </view>
+        <view class='item-box' hover-class="hover-style" catchtap='handleStop'>
+            <image src="{{sourceData.Mode==10?'/image/pt-active.png':'/image/pt.png'}}" class='ab-img'></image>
+            <view>
+                喷头清洁
+            </view>
+        </view>
+        <view class='item-box' hover-class="hover-style" catchtap='handleSingle' data-type="LightOnOff">
+            <image src="{{sourceData.LightOnOff==1?'/image/rg-active.png':'/image/rg.png'}}" class='ab-img'></image>
+            <view>
+                柔光照明 ({{sourceData.LightOnOff==1?'开':'关'}})
+            </view>
+        </view>
+        <view class='item-box' class='item-box' hover-class="hover-style" catchtap='handleSingle' data-type="JieNenOnOff">
+            <image src="{{sourceData.JieNenOnOff==1?'/image/jn-active.png':'/image/jn.png'}}" class='ab-img'></image>
+            <view>
+                节能 ({{sourceData.JieNenOnOff==1?'开':'关'}})
+            </view>
+        </view>
+        <view class='item-box' class='item-box' hover-class="hover-style" catchtap='handleSingle' data-type="ChuChuo">
+            <image src="{{sourceData.ChuChuo==1?'/image/cc-active.png':'/image/cc.png'}}" class='ab-img'></image>
+            <view>
+                自动除臭 ({{sourceData.ChuChuo==1?'开':'关'}})
+            </view>
+        </view>
+        <view class='item-box' class='item-box' hover-class="hover-style" catchtap='handleSingle' data-type="SeatTempOnOff">
+            <image src="{{sourceData.SeatTempOnOff==1?'/image/zw-active.png':'/image/zw.png'}}" class='ab-img'></image>
+            <view>
+                座温 ({{sourceData.SeatTempOnOff==1?'开':'关'}})
+            </view>
+        </view>
+    </view>
+</view>
