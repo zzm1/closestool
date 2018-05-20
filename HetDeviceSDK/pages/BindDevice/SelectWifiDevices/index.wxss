@@ -1,0 +1,12 @@
+/**index.wxss**/
+
+.nextBtn {
+  position:fixed; 
+  text-align: center;
+  margin:0 auto;
+  left:10px;  
+  right:10px;
+  bottom:60px;
+  font-size: 15px;
+  color: white;
+}

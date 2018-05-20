@@ -1,0 +1,57 @@
+<!--index.wxml-->
+
+<!--扫描设备视图-->
+<view class="{{progressHidden?'view_hide':'view_show'}}" style="text-align: center; margin-top:124px;">
+	<view style="width:193px; height:193px; margin: 0 auto;">
+		<image style="width:193px; height:193px;" mode="aspectFill" animation="{{animation}}" src="../../../Images/icon_progress@2x.png"></image>
+
+		<view style="display: flex; width:{{progressWidth}}px; margin: 0 auto; margin-top:-130px;">
+			<view style="margin: 0 auto; width:18.5px; height:21px;"></view>
+
+			<image class="{{showView_a?'view_show':'view_hide'}}" style="margin: 0 auto; width:27px; height:63px;" mode="aspectFit" src="{{aImageSrc}}"></image>
+			<image class="{{showView_b?'view_show':'view_hide'}}" style="margin: 0 auto; width:27px; height:63px;" mode="aspectFit" src="{{bImageSrc}}"></image>
+			<image class="{{showView_c?'view_show':'view_hide'}}" style="margin: 0 auto; width:27px; height:63px;" mode="aspectFit" src="{{cImageSrc}}"></image>
+
+			<image style="margin: 0 auto; width:18.5px; height:21px;" mode="aspectFit" src="../../../Images/icon_percentage@2x.png"></image>
+		</view>
+
+	</view>
+
+	<view class="saoView" style="margin-top:10px;">扫描设备...</view>
+</view>
+
+
+<!--设备注册云端-->
+<view class="{{yunViewHidden?'view_hide':'view_show'}}" style="text-align: center; margin-top:124px;">
+	<view style="width:193px; height:193px; margin: 0 auto;">
+		<view class="yuanquan" animation="{{animationData2}}"></view>
+		<view class="yuanquanContent">
+			<view class="yunNameView" style="color:#2D82FF; font-size: 23px; text-align: center; margin-top:70px; margin-left:11.5px">{{yunViewName}}</view>
+			<view style="color:#919191; font-size: 15px; text-align: center; margin-top:5px">{{yunViewDeviceName}}</view>
+		</view>
+		<view class="saoView" style="margin-top:10px;">设备注册云端...</view>
+	</view>
+</view>
+
+
+<!--成功视图-->
+<view class="{{successViewHidden?'view_hide':'view_show'}}" style="text-align: center; margin-top:124px;">
+	<image style="width:116px; height:116px;" mode="aspectFill" src="../../../Images/bindsuccess@2x.png"></image>
+	<view class="saoView" style="margin-top:10px;">绑定成功</view>
+</view>
+
+
+<!--列表-->
+<view class="{{tableViewHidden?'view_hide':'view_show'}}">
+	<block wx:for="{{listData}}" wx:key="">
+		<view class="subCellView" bindtap="cellClick" data-statu="close" data-hi="{{item}}">
+			<image style="width:60px; height:60px; margin-left:10px; margin-top:5px;" mode="aspectFill" src="{{item.productIcon}}"></image>
+			<view>
+				<view style="font-size: 14px; width:200px; height:20px; margin-top:10px; margin-left:10px;">{{item.productName}}</view>
+				<view style="font-size: 12px; width:200px; height:20px; margin-top:10px; margin-left:10px; color:#A3A3A3">{{item.localName}}</view>
+			</view>
+		</view>
+	</block>
+</view>
+
+

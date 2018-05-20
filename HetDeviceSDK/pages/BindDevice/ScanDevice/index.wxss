@@ -1,0 +1,48 @@
+/**index.wxss**/
+
+.subCellView {
+	display: flex;
+	height: 70px;
+	border-bottom:1px solid #EEEEEE;
+}
+
+.saoView {
+	height:20px;
+	color: #919191;
+	font-size: 14px;
+	text-align: center;
+}
+
+.view_hide{  
+ 	display: none;  
+}  
+.view_show{  
+ 	display: block;  
+} 
+
+.yuanquan { 
+  width: 193px;  
+  height: 193px;  
+  border-radius: 50%;  
+  background-color: #8CA8F9; 
+  position: relative;
+  z-index: 1  
+}
+
+.yuanquanContent {
+	width:193px; 
+	height:193px; 
+	border-radius: 50%; 
+	background-color: white; 
+	margin-top:-193px;
+	position:relative;
+	z-index:99;
+	border:1px solid #2D82FF;
+} 
+
+.yunNameView {
+	width:170px;
+	overflow:hidden; 
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}

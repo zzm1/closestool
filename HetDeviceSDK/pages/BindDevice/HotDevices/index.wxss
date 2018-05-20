@@ -1,0 +1,17 @@
+/**index.wxss**/
+
+.subCellView {
+	display: flex;
+	height: 70px;
+	border-bottom:1px solid #EEEEEE;
+}
+
+.topView {
+	width:100%;
+	background-color:white;
+  	position:fixed;
+  	margin:0 auto;
+  	left:0;  
+  	right:0; 
+  	top:0;
+}
